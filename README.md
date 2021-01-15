@@ -1,1 +1,1 @@
-# Tunneling API for Jupyter-JSC backend
+# Backend API for Jupyter-JSC backend
