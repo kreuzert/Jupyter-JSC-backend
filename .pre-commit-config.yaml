@@ -1,0 +1,25 @@
+repos:
+- repo: https://github.com/asottile/reorder_python_imports
+  rev: v1.9.0
+  hooks:
+  - id: reorder-python-imports
+- repo: https://github.com/ambv/black
+  rev: 19.10b0
+  hooks:
+  - id: black
+- repo: https://github.com/kreuzert/jinjalint
+  rev: '5c1689d7f780745f6ebc9eae8368ac9ed52fe0d9'
+  hooks:
+  - id: jinjalint
+    types: [file]  # restore the default `types` matching
+    files: \.(html)$
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.4.0
+  hooks:
+  - id: end-of-file-fixer
+  - id: check-json
+  - id: check-yaml
+  - id: check-case-conflict
+  - id: check-executables-have-shebangs
+  - id: requirements-txt-fixer
+  - id: flake8
